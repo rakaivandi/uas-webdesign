@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+html,body {
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: aqua;
+  text-decoration: unset;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: unset;
+}
+
+body {
+  color: white;
+  background-color: rgb(139, 149, 194);
+}
+
+/* nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+  background-color: white;
+  height: 110px;
+  position: relative;
+}
+
+.judul {
+  margin-top: 10px;
+  color: #acacac;
+}
+
+.nav-logo {
+  color: white;
+}
+
+.main-link{
+  margin-top: 20px;
+}
+
+.nav-link {
+  list-style: none;
+}
+
+.nav-link > li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.nav-link li > a {
+  color: black;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-link li > a:hover {
+  color: aqua;
+}
+
+/* language */
+.lang-menu > li,
+a{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #acacac;
+  text-decoration: none;
+}
+
+.lang-menu{
+  margin-top: 15px;
+  color: black;
+}
+
+.selected-lang{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 65px;
+}
+
+.selected-lang::before{
+  content: '';
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(https://www.countryflags.io/id/flat/32.png);
+}
+
+.lang-menu > ul{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 90px;
+  border: 1px solid white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: absolute;
+  display: none;
+}
+
+.lang-menu > ul > li{
+list-style: none;
+display: flex;
+justify-content: space-between;
+}
+
+.lang-menu > ul > li > a{
+  width: 125px;
+  display: block;
+  padding: 5px 10px;
+}
+
+.lang-menu > ul > li > a::before{
+content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.lang-menu > ul > li > a:hover{
+background-color: white;
+}
+
+.EN::before{
+background-image: url(https://www.countryflags.io/US/flat/32.png);
+}
+
+.JP::before{
+background-image: url(https://www.countryflags.io/JP/flat/32.png);
+}
+
+.KR::before{
+background-image: url(https://www.countryflags.io/KR/flat/32.png);
+}
+
+.ID::before{
+background-image: url(https://www.countryflags.io/ID/flat/32.png);
+}
+
+.lang-menu:hover ul{
+display: block;
+}
+/* language-end */
+
+/* nav end */
+
+/* hero section */
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 700px 1fr);
+  align-items: center;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+
+.hero-content {
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-bottom: 100px;
+}
+
+.hero-content > h3 {
+  margin-top: -10px;
+  color: #57d4fa;
+}
+
+.hero-content > hr {
+  background-color: white;
+  width: 190px;
+  height: 1px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.hero-cta1 {
+  border: none;
+  outline: none;
+  padding: 15px 45px;
+  background: #57d4fa;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hero-cta1:hover {
+  transform: translate(5px);
+  background-color: white;
+  color: #57d4fa;
+}
+
+.hero-cta2 {
+  border:none;
+  margin-left: 10px;
+  outline: none;
+  padding: 15px 45px;
+  background: none;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hero-cta2:hover {
+  transform: translate(5px);
+  background-color: white;
+  color: #57d4fa;
+}
+
+/* hero section end */
+
+/* social-media */
+.social-media{
+  box-sizing: border-box;
+  margin-top: -50px;
+  margin-left: -30px;
+  transform: translateY(80px) translateX(30px) ;
+}
+
+.social-media > i{
+  font-size: 35px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer
+  transition: all .3s;
+  border-radius: 50%;
+}
+
+.social-media i:hover{
+  background: white;
+  color: #57d4fa;
+}
+/* social-media-end */
+
+/* footer */
+.container-2{
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row{
+text-align: center;
+}
+
+
+.footer {
+  background-color: white;
+  padding: 70px 0;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col > h4{
+font-size: 18px;
+color: black;
+text-transform: capitalize;
+margin-bottom: 35px;
+font-weight: 500;
+position: relative;
+}
+
+.footer-col > h4::before{
+  content: '';
+  position: absolute;
+  left: 97px;
+  bottom: -10px;
+  background-color: #57d4fa;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col > ul {
+  text-align: left;
+  padding-left: 97px;
+  box-sizing: border-box;
+}
+
+.footer-col > ul > li:not(:last-child){
+margin-bottom: 0;
+}
+.footer-col > ul > li > a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  color: #acacac;
+  display: block;
+  transition: all 0.3s ease;
+  margin-bottom: 4px;
+}
+
+.footer-col > ul > li > a:hover{
+  color: #57d4fa;
+  padding-left: 10px;
+}
+
+.footer-col .social-media2 a{
+display: inline-block;
+height: 25px;
+width: 25px;
+background-color: #57d4fa;
+margin-right: 5px;
+text-align: center;
+line-height: 25px;
+border-radius: 50%;
+color: white;
+transition: all 0.5s ease;
+}
+
+.footer-col .social-media2 a:hover{
+background-color: white;
+color: #57d4fa;
+}
+/* footer-end */
